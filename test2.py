@@ -5,7 +5,7 @@ import pandas as pd
 from ultralytics import YOLO
 import cvzone
 
-#Code By Ayush Rai
+#Code AYUSHRAIcOL-1
 
 
 with open("areas.pkl", 'rb') as f:

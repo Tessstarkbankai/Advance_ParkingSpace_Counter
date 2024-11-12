@@ -3,7 +3,7 @@ import numpy as np
 import cvzone
 import pickle
 
-#Code By Ayush Rai
+#Code AYUSHRAIcOL-1
 
 cap = cv2.VideoCapture("easy.mp4")
 
