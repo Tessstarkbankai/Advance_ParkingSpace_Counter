@@ -5,6 +5,9 @@ import pandas as pd
 from ultralytics import YOLO
 import cvzone
 
+#Code By Ayush Rai
+
+
 with open("areas.pkl", 'rb') as f:
         data = pickle.load(f)
         polylines, area_names = data['polylines'], data['area_names']

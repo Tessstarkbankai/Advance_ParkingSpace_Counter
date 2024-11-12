@@ -3,13 +3,14 @@ import numpy as np
 import cvzone
 import pickle
 
+#Code By Ayush Rai
 
-cap = cv2.VideoCapture("easy1.mp4")
+cap = cv2.VideoCapture("easy.mp4")
 
 drawing = False
 area_names = []
 try:
-    with open("areas.pkl", 'rb') as f:
+    with open("area.pkl", 'rb') as f:
         data = pickle.load(f)
         polylines, area_names = data['polylines'], data['area_names']
 except:
@@ -52,7 +53,7 @@ while True:
 
     Key = cv2.waitKey(100) & 0xFF
     if Key == ord('s'):
-        with open("areas.pkl", 'wb') as f:
+        with open("area.pkl", 'wb') as f:
             data = {'polylines': polylines, 'area_names': area_names}
             pickle.dump(data, f)
         print("Saved")
